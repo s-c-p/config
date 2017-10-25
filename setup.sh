@@ -34,6 +34,7 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 sed -i -e 's/robbyrussell/ys/g' ~/.zshrc
 echo "export TERM=xterm-256color" >> ~/.zshrc
 echo "alias py=python3" >> ~/.zshrc
+echo "alias py2=python2" >> ~/.zshrc
 
 # change wallpapers
 gsettings set org.gnome.desktop.background picture-uri  file:///usr/share/backgrounds/gnome/Road.jpg
