@@ -1,0 +1,8 @@
+vimrc
+  i-beam cursor for insert/append mode, otherwise block
+
+ys.zsh-theme
+  show computer name only if SSH (i.e. PC name stored in file @ bootup, compare it with what tty says to determine if this is another computer)
+  show path inside repo when inside git/hg repo, cuz one can always `echo $PWD`
+
+repack and upload vim-plug.tar.gz to include git gutter's repo as well

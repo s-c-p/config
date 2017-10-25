@@ -1,0 +1,36 @@
+" Vim Plug -------------------------------------------------------------------
+call plug#begin('~/.vim/plugged')
+" cutting edge syntax support --------------------------------------
+Plug 'othree/yajs.vim'
+" note that'sheerun/vim-polyglot isn't satisfactory at this time
+Plug 'othree/html5-syntax.vim'
+Plug 'vim-python/python-syntax'
+" utils ------------------------------------------------------------
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" extravagant ------------------------------------------------------
+" Plug 'tpope/vim-abolish'
+" Plug 'tpope/vim-fugitive'
+" see-- https://vimawesome.com/plugin/ultisnips
+call plug#end()
+
+" plugin specific config(s) ----------------------------------------
+let NERDTreeShowHidden=1
+
+" bare essentials ------------------------------------------------------------
+"   these are written after plugins are loaded so that plugin's settings
+"   don't end up overwriting these
+set number
+set nowrap
+set hlsearch
+set incsearch
+set tabstop=4
+set autoindent
+set smartindent
+hi Search ctermfg=167 ctermbg=NONE cterm=underline " guifg=#e74c3c guibg=NONE gui=underline
+hi IncSearch ctermfg=167 ctermbg=NONE " cterm=underline " guifg=#e74c3c guibg=NONE gui=underline
+
+" file-type specific settings, thanks to bit.ly/2yHOp1b and bit.ly/2yHMCsQ
+au FileType text setl tabstop=4 wrap
+au FileType python setl tabstop=4 shiftwidth=4 expandtab softtabstop=4
