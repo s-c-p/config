@@ -39,3 +39,6 @@ echo "alias py2=python2" >> ~/.zshrc
 # change wallpapers
 gsettings set org.gnome.desktop.background picture-uri  file:///usr/share/backgrounds/gnome/Road.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/ubuntu-gnome/pexels-fruit.jpg
+
+# initialized pomodoro sw
+/usr/bin/gnome-pomodoro --no-default-window &
