@@ -36,6 +36,10 @@ echo "export TERM=xterm-256color" >> ~/.zshrc
 echo "alias py=python3" >> ~/.zshrc
 echo "alias py2=python2" >> ~/.zshrc
 
+# easy gitlab
+openssl enc -d -aes-256-cbc -salt -base64 -in gitlab_auth -out ~/.ssh/id_rsa
+sudo chmod 600 ~/.ssh/id_rsa
+
 # change wallpapers
 gsettings set org.gnome.desktop.background picture-uri  file:///usr/share/backgrounds/gnome/Road.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/ubuntu-gnome/pexels-fruit.jpg
