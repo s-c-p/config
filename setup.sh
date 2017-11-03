@@ -17,10 +17,12 @@ git config --global user.name s-c-p
 git config --global user.email prasadsatish45@binkmail.com
 
 # configure vim
+mkdir -p ~/.vim/colors
 mkdir -p ~/.vim/plugged
 mkdir -p ~/.vim/autoload
 cp config/vimrc ~/.vimrc
 cp config/vim-plug ~/.vim/autoload/plug.vim
+cp config/vim-colorscheme ~/.vim/colors/aristocrat.vim
 tar xzf lib/vim-plug.tar.gz -C ~/.vim/plugged
 
 # configure terminator
@@ -37,7 +39,7 @@ echo "alias py=python3" >> ~/.zshrc
 echo "alias py2=python2" >> ~/.zshrc
 
 # easy gitlab
-openssl enc -d -aes-256-cbc -salt -base64 -in gitlab_auth -out ~/.ssh/id_rsa
+openssl enc -d -aes-256-cbc -salt -base64 -in config/gitlab_auth -out ~/.ssh/id_rsa
 sudo chmod 600 ~/.ssh/id_rsa
 
 # change wallpapers
