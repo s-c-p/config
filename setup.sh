@@ -39,6 +39,7 @@ echo "alias py=python3" >> ~/.zshrc
 echo "alias py2=python2" >> ~/.zshrc
 
 # easy gitlab
+wmctrl -ia $WINDOWID
 mkdir -p ~/.ssh   # because sometimes this folder is not created
 openssl enc -d -aes-256-cbc -salt -base64 -in config/gitlab_auth -out ~/.ssh/id_rsa
 sudo chmod 600 ~/.ssh/id_rsa
