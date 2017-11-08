@@ -9,8 +9,9 @@ cp bin/fonts/*.otf ~/.fonts
 fc-cache -f -v "~/.fonts"
 
 # configure firefox
-mkdir ~/.mozilla
-tar xzf lib/base.mozilla.tar.gz -C ~/.mozilla
+mkdir -p ~/.mozilla/firefox
+mkdir -p ~/.mozilla/extensions
+tar xzf lib/base.mozilla.tar.gz -C ~/.mozilla/firefox
 
 # configure git
 git config --global user.name s-c-p
