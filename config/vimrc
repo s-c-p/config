@@ -6,7 +6,6 @@ Plug 'othree/yajs.vim'
 Plug 'othree/html5-syntax.vim'
 Plug 'vim-python/python-syntax'
 " utils ------------------------------------------------------------
-Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " extravagant ------------------------------------------------------
@@ -17,6 +16,8 @@ call plug#end()
 
 " plugin specific config(s) ----------------------------------------
 let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+map <C-o> :NERDTreeToggle<CR>
 
 " bare essentials ------------------------------------------------------------
 "   these are written after plugins are loaded so that plugin's settings
