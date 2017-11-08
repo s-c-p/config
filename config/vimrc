@@ -29,6 +29,10 @@ set incsearch
 set tabstop=4
 set autoindent
 set smartindent
+" see-- bit.ly/2jaKhBy
+set viewdir=$HOME/.vim/views
+set directory=$HOME/.vim/swaps
+set backupdir=$HOME/.vim/backups
 hi Search ctermfg=167 ctermbg=NONE cterm=underline " guifg=#e74c3c guibg=NONE gui=underline
 hi IncSearch ctermfg=167 ctermbg=NONE " cterm=underline " guifg=#e74c3c guibg=NONE gui=underline
 
