@@ -21,6 +21,7 @@ git config --global user.email prasadsatish45@binkmail.com
 mkdir -p ~/.vim/colors
 mkdir -p ~/.vim/plugged
 mkdir -p ~/.vim/autoload
+mkdir -p ~/.vim/{views,swaps,backups}
 cp config/vimrc ~/.vimrc
 cp config/vim-plug ~/.vim/autoload/plug.vim
 cp config/vim-colorscheme ~/.vim/colors/aristocrat.vim
