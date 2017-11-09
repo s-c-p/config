@@ -37,6 +37,7 @@ set smartindent
 set viewdir=$HOME/.vim/views
 set directory=$HOME/.vim/swaps
 set backupdir=$HOME/.vim/backups
+let &colorcolumn=join(range(81,999),",")  " so.com/q/2447109/
 hi Search ctermfg=167 ctermbg=NONE cterm=underline " guifg=#e74c3c guibg=NONE gui=underline
 hi IncSearch ctermfg=167 ctermbg=NONE " cterm=underline " guifg=#e74c3c guibg=NONE gui=underline
 
