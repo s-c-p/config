@@ -1,23 +1,27 @@
 " Vim Plug -------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
-" cutting edge syntax support --------------------------------------
-Plug 'othree/yajs.vim'
-" note that'sheerun/vim-polyglot isn't satisfactory at this time
+" cutting edge syntax -----
+Plug 'othree/yajs.vim'                                     " note that'sheerun/vim-polyglot isn't satisfactory at this time
 Plug 'othree/html5-syntax.vim'
 Plug 'vim-python/python-syntax'
-" utils ------------------------------------------------------------
+" utils -----
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" extravagant ------------------------------------------------------
+" precision colors -----
+Plug 'altercation/vim-colors-solarized'
+" extravagant -----
 " Plug 'tpope/vim-abolish'
-" Plug 'tpope/vim-fugitive'
-" see-- https://vimawesome.com/plugin/ultisnips
+" Plug 'tpope/vim-fugitive'                                " see-- https://vimawesome.com/plugin/ultisnips
 call plug#end()
 
-" plugin specific config(s) ----------------------------------------
+" plugin specific config(s) --------------------------------------------------
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 map <C-o> :NERDTreeToggle<CR>
+let g:python_highlight_all = 1
+syntax enable
+set background=dark
+colorscheme solarized
 
 " bare essentials ------------------------------------------------------------
 "   these are written after plugins are loaded so that plugin's settings
