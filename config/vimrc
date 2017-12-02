@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
 " cutting edge syntax -----
 Plug 'othree/yajs.vim'                                     " note that'sheerun/vim-polyglot isn't satisfactory at this time
-Plug 'ElmCast/elm-vim'                                     " note that'sheerun/vim-polyglot isn't satisfactory at this time
+Plug 'ElmCast/elm-vim'
 Plug 'othree/html5-syntax.vim'
 Plug 'vim-python/python-syntax'
 " utils -----
