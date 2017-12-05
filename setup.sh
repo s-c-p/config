@@ -9,23 +9,22 @@ cp bin/fonts/*.otf ~/.fonts
 fc-cache -f -v "~/.fonts"
 
 # configure firefox
-mkdir -p ~/.mozilla/firefox
-mkdir -p ~/.mozilla/extensions
-tar xzf lib/base.mozilla.tar.gz -C ~/.mozilla/firefox
+mkdir -p ~/.mozilla/{firefox,extensions}
+tar xf lib/base.mozilla.tar.gz -C ~/.mozilla/firefox
 
 # configure git
 git config --global user.name s-c-p
 git config --global user.email prasadsatish45@binkmail.com
 
 # configure vim
-mkdir -p ~/.vim/colors
-mkdir -p ~/.vim/plugged
-mkdir -p ~/.vim/autoload
 mkdir -p ~/.vim/{views,swaps,backups}
 cp config/vimrc ~/.vimrc
+mkdir -p ~/.vim/autoload
 cp config/vim-plug ~/.vim/autoload/plug.vim
+mkdir -p ~/.vim/plugged
+tar xf lib/vim-plug.tar.gz -C ~/.vim/plugged
+mkdir -p ~/.vim/colors
 cp config/vim-colorscheme ~/.vim/colors/aristocrat.vim
-tar xzf lib/vim-plug.tar.gz -C ~/.vim/plugged
 
 # configure terminator
 mkdir -p ~/.config/terminator
@@ -33,7 +32,7 @@ cp config/terminator.config ~/.config/terminator/config
 
 # configure zsh
 mkdir -p ~/.oh-my-zsh
-tar xzf lib/oh-my-zsh.tar.gz -C ~/.oh-my-zsh
+tar xf lib/oh-my-zsh.tar.gz -C ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 sed -i -e 's/robbyrussell/ys/g' ~/.zshrc
 echo "export TERM=xterm-256color" >> ~/.zshrc
