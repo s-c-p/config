@@ -17,4 +17,5 @@ in vim
   no bells
   supertab with nice config
 
-lesspass
+lesspass readily available
+better aliases, like rlwrap smlnj, etc.
