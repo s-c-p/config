@@ -14,6 +14,8 @@ in browser
   no suggeestion
 
 in vim
+  diff the vimrc in my current setup and this repo, keep anything that makes sense
+  from (vim.wikia.com/wiki/Su-write) `command W w !sudo tee "%" > /dev/null`
   no bells
   supertab with nice config
   if backspace is smart, why not back arrow key, make it so
