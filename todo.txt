@@ -16,13 +16,17 @@ in browser
 in vim
   diff the vimrc in my current setup and this repo, keep anything that makes sense
   from (vim.wikia.com/wiki/Su-write) `command W w !sudo tee "%" > /dev/null`
-  no bells
+  from (vim.wikia.com/wiki/Disable_beeping) `set noerrorbells visualbell t_vb=`
   supertab with nice config
-  if backspace is smart, why not back arrow key, make it so
-  matchit
-  surround
-  tomtom/tcomment_vim or tpope/comment
+  vim-scripts/matchit.zip
+  vim-scripts/AutoClose
+  tpope/vim-surround
+  tpope/vim-commentary
   ggreer/the_silver_searcher
+  if backspace is smart [`set backspace=indent,eol,start` from (vim.wikia.com/wiki/Backspace_and_delete_problems)], why not back arrow key, make it so
+  itchyny/lightline.vim
+  terryma/vim-multiple-cursors
+  terryma/vim-expand-region
 
 lesspass readily available
 better aliases, like rlwrap smlnj, etc.
