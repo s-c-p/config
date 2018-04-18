@@ -1,18 +1,27 @@
+set nocompatible
+
 " Vim Plug -------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
-" cutting edge syntax -----
-Plug 'othree/yajs.vim'                                     " note that'sheerun/vim-polyglot isn't satisfactory at this time
-Plug 'ElmCast/elm-vim'
-Plug 'othree/html5-syntax.vim'
-Plug 'vim-python/python-syntax'
-" utils -----
+" looks ----------------------------------------
 Plug 'vim-airline/vim-airline'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" precision colors -----
+"Plug 'tomasr/molokai'										" see repo for config
 Plug 'altercation/vim-colors-solarized'
-" extravagant -----
-" Plug 'tpope/vim-abolish'
-" Plug 'tpope/vim-fugitive'                                " see-- https://vimawesome.com/plugin/ultisnips
+
+" syntax ---------------------------------------
+"Plug 'vim-syntastic/syntastic'
+"Plug 'othree/yajs.vim'                                     " note that'sheerun/vim-polyglot isn't satisfactory at this time
+"Plug 'ElmCast/elm-vim'
+"Plug 'othree/html5-syntax.vim'
+Plug 'vim-python/python-syntax'
+
+" enhancements ---------------------------------
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" IDE-ish --------------------------------------
+
+" extravagant ----------------------------------
+"Plug 'tpope/vim-abolish'
+"Plug 'tpope/vim-fugitive'                                 " see-- https://vimawesome.com/plugin/ultisnips
 call plug#end()
 
 " plugin specific config(s) --------------------------------------------------
