@@ -3,6 +3,10 @@
 # install binaries
 /bin/bash bin/debs-setup.sh
 
+# get lesspass
+mkdir ~/coding
+cp bin/lesspass.py ~/coding/
+
 # install fonts
 mkdir ~/.fonts
 cp bin/fonts/*.otf ~/.fonts
