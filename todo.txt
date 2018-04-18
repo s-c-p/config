@@ -4,8 +4,9 @@ ys.zsh-theme
 
 
 in browser
-  no suggeestion
+  no suggestions in omnibar; address bar searches duckduckgo; search bar searches 
   repack the tar with updated plugins
+  set fullscreen-autohide in about:config to false
 
 
 in vim
