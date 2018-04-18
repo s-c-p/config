@@ -12,11 +12,18 @@ in browser
 in vim
   if backspace is smart [`set backspace=indent,eol,start` from (vim.wikia.com/wiki/Backspace_and_delete_problems)], why not back arrow key, make it so
   i-beam cursor for insert/append mode, otherwise block
+
+  https://github.com/jez/vim-as-an-ide/blob/master/vimrc.vim
+  https://coderoncode.com/tools/2017/04/16/vim-the-perfect-ide.html
+
+  ajh17/VimCompletesMe
+  lifepillar/vim-mucomplete
+  supertab with nice config
+
   repack and upload vim-plug.tar.gz
   diff the vimrc in my current setup and this repo, keep anything that makes sense
   from (vim.wikia.com/wiki/Su-write) `command W w !sudo tee "%" > /dev/null`
   from (vim.wikia.com/wiki/Disable_beeping) `set noerrorbells visualbell t_vb=`
-  supertab with nice config
   vim-scripts/matchit.zip
   vim-scripts/AutoClose
   tpope/vim-surround
