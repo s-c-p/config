@@ -25,6 +25,3 @@ in vim
   terryma/vim-expand-region
   ggreer/the_silver_searcher
   itchyny/lightline.vim
-
-lesspass readily available
-better aliases, like rlwrap smlnj, etc.
