@@ -34,7 +34,7 @@ cp config/terminator.config ~/.config/terminator/config
 SETUPP="$HOME/.local/share/omf"
 CONFIGP="$HOME/.config/omf"
 mkdir -p $SETUPP
-tar xf config/shell/omf-setup.tar.gz -C $SETUPP
+tar xf lib/omf-setup.tar.gz -C $SETUPP
 mkdir -p $CONFIGP
 cp config/shell/omf-config/* $CONFIGP
 # TODO see-- askubuntu.com/q/33845/
