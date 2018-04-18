@@ -28,5 +28,23 @@ in vim
   terryma/vim-multiple-cursors
   terryma/vim-expand-region
 
+replace `config/gitlab_auth` with `config/git-creds`
+```
+U2FsdGVkX19yb3ndx5IckNG4H2B0ID6x64G+psGDfRAGKwRhQZaGOv4PVUMqOofI
+Y/+C2TxM2QfUzqo5OtqCTQ==
+```
+and add following code intelligently to setup.sh
+```
+SH="`dirname "$(readlink -f "$0")"`"
+
+mkdir -p "$HOME/.config/git"
+openssl enc -d -aes-256-cbc -salt -base64 \
+		-in "$SH/config/git-creds" \
+		-out "$HOME/.config/git/credentials"
+
+git config --global credential.helper \
+		'store --file=/home/ubuntu-gnome/.config/git/credentials'
+```
+
 lesspass readily available
 better aliases, like rlwrap smlnj, etc.
