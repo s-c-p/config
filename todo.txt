@@ -1,19 +1,17 @@
-vimrc
-  i-beam cursor for insert/append mode, otherwise block
-
 ys.zsh-theme
   show computer name only if SSH (i.e. PC name stored in file @ bootup, compare it with what tty says to determine if this is another computer)
   show path inside repo when inside git/hg repo, cuz one can always `echo $PWD`
 
-repack and upload vim-plug.tar.gz to include git gutter's repo as well
-
-
-
 
 in browser
   no suggeestion
+  repack the tar with updated plugins
+
 
 in vim
+  if backspace is smart [`set backspace=indent,eol,start` from (vim.wikia.com/wiki/Backspace_and_delete_problems)], why not back arrow key, make it so
+  i-beam cursor for insert/append mode, otherwise block
+  repack and upload vim-plug.tar.gz
   diff the vimrc in my current setup and this repo, keep anything that makes sense
   from (vim.wikia.com/wiki/Su-write) `command W w !sudo tee "%" > /dev/null`
   from (vim.wikia.com/wiki/Disable_beeping) `set noerrorbells visualbell t_vb=`
@@ -22,11 +20,10 @@ in vim
   vim-scripts/AutoClose
   tpope/vim-surround
   tpope/vim-commentary
-  ggreer/the_silver_searcher
-  if backspace is smart [`set backspace=indent,eol,start` from (vim.wikia.com/wiki/Backspace_and_delete_problems)], why not back arrow key, make it so
-  itchyny/lightline.vim
   terryma/vim-multiple-cursors
   terryma/vim-expand-region
+  ggreer/the_silver_searcher
+  itchyny/lightline.vim
 
 lesspass readily available
 better aliases, like rlwrap smlnj, etc.
