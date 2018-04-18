@@ -42,15 +42,19 @@ cp config/shell/* $CONFIGP  # didn't tar it cuz header tar-ing increases size 10
 # echo "alias py=python3" >> ~/.zshrc
 # echo "alias py2=python2" >> ~/.zshrc
 
-# easy gitlab
-wmctrl -ia $WINDOWID
-mkdir -p ~/.ssh   # because sometimes this folder is not created
-openssl enc -d -aes-256-cbc -salt -base64 -in config/gitlab_auth -out ~/.ssh/id_rsa
-sudo chmod 600 ~/.ssh/id_rsa
-
 # change wallpapers
 gsettings set org.gnome.desktop.background picture-uri  file:///usr/share/backgrounds/gnome/Road.jpg
 gsettings set org.gnome.desktop.screensaver picture-uri file:///usr/share/backgrounds/ubuntu-gnome/pexels-fruit.jpg
 
 # initialized pomodoro sw
 /usr/bin/gnome-pomodoro --no-default-window &
+
+# easy git; done at last so that blocking call doesn't interrupt setup
+SH="`dirname "$(readlink -f "$0")"`"    # TODO: include this everywhere
+mkdir -p "$HOME/.config/git"
+openssl enc -d -aes-256-cbc -salt -base64 \
+		-in "$SH/config/git-creds" \
+		-out "$HOME/.config/git/credentials"
+git config --global credential.helper \
+		'store --file=/home/ubuntu-gnome/.config/git/credentials'
+
