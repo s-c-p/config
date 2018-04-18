@@ -13,6 +13,6 @@ set -x TERM xterm-256color
 alias py=python3
 alias py2=python2
 alias sml="rlwrap sml"
-alias lesspass="python3 ~/coding/lesspass.py"
+alias lsps="python3 ~/coding/lesspass.py"
 alias enc="openssl enc -e -aes-256-cbc -salt -base64 -in"
 alias dec="openssl enc -d -aes-256-cbc -salt -base64 -in"
