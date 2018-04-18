@@ -3,7 +3,7 @@
 curr="$PWD/bin"
 
 debs="$(
-	for aPkg in 'git' 'terminator' 'tools' 'vim' 'zsh'; do
+	for aPkg in 'git' 'terminator' 'tools' 'vim' 'fish'; do
 		ls -d -1 $curr/$aPkg/*
 	done
 )"
