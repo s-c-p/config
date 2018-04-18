@@ -30,14 +30,17 @@ cp config/vim-colorscheme ~/.vim/colors/aristocrat.vim
 mkdir -p ~/.config/terminator
 cp config/terminator.config ~/.config/terminator/config
 
-# configure zsh
-mkdir -p ~/.oh-my-zsh
-tar xf lib/oh-my-zsh.tar.gz -C ~/.oh-my-zsh
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-sed -i -e 's/robbyrussell/ys/g' ~/.zshrc
-echo "export TERM=xterm-256color" >> ~/.zshrc
-echo "alias py=python3" >> ~/.zshrc
-echo "alias py2=python2" >> ~/.zshrc
+# configure fish
+SETUPP="$HOME/.local/share/omf"
+CONFIGP="$HOME/.config/omf"
+mkdir -p $SETUPP
+tar xf config/shell/omf-setup.tar.gz -C $SETUPP
+mkdir -p $CONFIGP
+cp config/shell/omf-config/* $CONFIGP
+# TODO see-- askubuntu.com/q/33845/
+# echo "export TERM=xterm-256color" >> ~/.zshrc
+# echo "alias py=python3" >> ~/.zshrc
+# echo "alias py2=python2" >> ~/.zshrc
 
 # easy gitlab
 wmctrl -ia $WINDOWID
