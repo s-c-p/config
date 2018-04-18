@@ -41,10 +41,6 @@ mkdir -p $FISHP
 # didn't tar these cuz header tar-ing increases size 10x
 cp config/shell/omf/* $CONFIGP
 cp config/shell/fish/config.fish $FISHP
-# TODO see-- askubuntu.com/q/33845/
-# echo "export TERM=xterm-256color" >> ~/.zshrc
-# echo "alias py=python3" >> ~/.zshrc
-# echo "alias py2=python2" >> ~/.zshrc
 
 # change wallpapers
 gsettings set org.gnome.desktop.background picture-uri  file:///usr/share/backgrounds/gnome/Road.jpg
