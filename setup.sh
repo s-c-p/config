@@ -33,10 +33,14 @@ cp config/terminator.config ~/.config/terminator/config
 # configure fish
 SETUPP="$HOME/.local/share/omf"
 CONFIGP="$HOME/.config/omf"
+FISHP="$HOME/.config/fish"
 mkdir -p $SETUPP
 tar xf lib/omf-setup.tar.gz -C $SETUPP
 mkdir -p $CONFIGP
-cp config/shell/* $CONFIGP  # didn't tar it cuz header tar-ing increases size 10x
+mkdir -p $FISHP
+# didn't tar these cuz header tar-ing increases size 10x
+cp config/shell/omf/* $CONFIGP
+cp config/shell/fish/config.fish $FISHP
 # TODO see-- askubuntu.com/q/33845/
 # echo "export TERM=xterm-256color" >> ~/.zshrc
 # echo "alias py=python3" >> ~/.zshrc
