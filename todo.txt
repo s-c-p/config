@@ -6,7 +6,8 @@ ys.zsh-theme
 in browser
   repack the tar with updated plugins
   no suggestions in omnibar
-  address bar searches duckduckgo; search bar searches that 
+  address bar searches duckduckgo; search bar searches that
+  default search engine is DDGo; can get goo results with `!g`
   in about:config
     set fullscreen-autohide to false
     set quit... to true
