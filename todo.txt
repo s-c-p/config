@@ -4,20 +4,27 @@ ys.zsh-theme
 
 
 in browser
-  no suggestions in omnibar; address bar searches duckduckgo; search bar searches 
   repack the tar with updated plugins
-  set fullscreen-autohide in about:config to false
-
+  no suggestions in omnibar
+  address bar searches duckduckgo; search bar searches that 
+  in about:config
+    set fullscreen-autohide to false
+    set quit... to true
+  addons
+    ublock origin
+    owl
+    http nowhere
+    mind the time
 
 in vim
   if backspace is smart [vim.wikia.com/wiki/Backspace_and_delete_problems], why not back arrow key, make it so
   i-beam cursor for insert/append mode, otherwise block
-  repack and upload vim-plug.tar.gz
 
 
 ## Done
 
 in vim
+  repack and upload vim-plug.tar.gz
   `ajh17/VimCompletesMe` or `lifepillar/vim-mucomplete` or `supertab` with nice config
   https://github.com/jez/vim-as-an-ide/blob/master/vimrc.vim
   https://coderoncode.com/tools/2017/04/16/vim-the-perfect-ide.html
