@@ -1,6 +1,7 @@
 set nocompatible
 
 " Vim Plug -------------------------------------------------------------------
+"   to update, do `:PlugClean` -> `y` -> `:PlugInstall`
 call plug#begin('~/.vim/plugged')
 
 " looks ----------------------------------------
@@ -19,8 +20,6 @@ Plug 'vim-python/python-syntax'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ajh17/VimCompletesMe'                     " 100K smaller than supertab
 Plug 'reedes/vim-pencil'
-Plug 'vim-scripts/matchit.zip'
-Plug 'Townk/vim-autoclose'                      " why? see past made on 20apr2018 at pastebin.com/search?q=Townk
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
@@ -33,6 +32,8 @@ Plug 'terryma/vim-expand-region'
 " extravagant ----------------------------------
 "Plue 'SirVer/ultisnips'
 "Plug 'tpope/vim-abolish'
+"Plug 'vim-scripts/matchit.zip'
+"Plug 'Townk/vim-autoclose'                      " why? see past made on 20apr2018 at pastebin.com/search?q=Townk
 "Plug 'tpope/vim-fugitive'
 
 call plug#end()
